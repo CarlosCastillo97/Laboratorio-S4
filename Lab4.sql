@@ -1,17 +1,20 @@
-CREATE DATABASE bd_ins;
 USE bd_ins;
-CREATE TABLE alumnos
-(
-	ID int(20) auto_increment,
-    NombreAlumno VARCHAR(60) NOT NULL,
-    Grupo VARCHAR(60) NOT NULL,
-    PRIMARY KEY (NombreAlumno)
-	) ENGINE=innoBD DEFAULT CHARSET=latin1;
 
 CREATE TABLE estudiantes
 (	
-	ID int(20) auto_increment,
+	CodigoCarnet VARCHAR (20) PRIMARY KEY,
     NombreEstudiante VARCHAR(60) NOT NULL,
+    DireccionEstudiante VARCHAR (60) NOT NULL,
+    TelefonoEstudiante VARCHAR(60) NOT NULL,
+    CorreoElectronicoEstudiante VARCHAR(60),
+    EstatusEstudiante VARCHAR(30)
+    ) ENGINE=InnoDB;
+    
+    
+CREATE TABLE maestros
+(
+	ID int(20) auto_increment,
+    NombreMaestro VARCHAR(60) NOT NULL,
     Grupo VARCHAR(60) NOT NULL,
-    PRIMARY KEY (NombreEstudiante)
-    ) ENGINE=innoDB DEFAULT CHARSET=latin1;
+    PRIMARY KEY (NombreMaestro)
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
