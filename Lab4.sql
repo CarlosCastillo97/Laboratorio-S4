@@ -1,3 +1,4 @@
+CREATE DATABASE bd_ins;
 USE bd_ins;
 
 CREATE TABLE estudiantes
@@ -9,4 +10,3 @@ CREATE TABLE estudiantes
     CorreoElectronicoEstudiante VARCHAR(60),
     EstatusEstudiante VARCHAR(30)
     ) ENGINE=InnoDB;
-    
