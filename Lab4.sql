@@ -10,11 +10,3 @@ CREATE TABLE estudiantes
     EstatusEstudiante VARCHAR(30)
     ) ENGINE=InnoDB;
     
-    
-CREATE TABLE maestros
-(
-	ID int(20) auto_increment,
-    NombreMaestro VARCHAR(60) NOT NULL,
-    Grupo VARCHAR(60) NOT NULL,
-    PRIMARY KEY (NombreMaestro)
-    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
