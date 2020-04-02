@@ -1,6 +1,6 @@
-DROP DATABASE Planilla_Bd;
-CREATE DATABASE Planilla_Bd;
-USE Planilla_Bd;
+DROP DATABASE planilla_bd;
+CREATE DATABASE planilla_bd;
+USE planilla_bd;
 
 CREATE TABLE puesto_25344 (
 	codigo_puesto VARCHAR(5),
